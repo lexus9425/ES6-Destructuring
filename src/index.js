@@ -13,6 +13,14 @@ const {
   speedStats: { topSpeed: teslaTopSpeed }
 } = tesla;
 
+const {
+  coloursByPopularity: [hondaTopColour]
+} = honda;
+
+const {
+  coloursByPopularity: [teslaTopColour]
+} = tesla;
+
 ReactDOM.render(
   <table>
     <tr>
@@ -23,12 +31,12 @@ ReactDOM.render(
     <tr>
       <td>{tesla.model}</td>
       <td>{teslaTopSpeed}</td>
-      <td>{tesla.TopColour}</td>
+      <td>{teslaTopColour}</td>
     </tr>
     <tr>
       <td>{honda.model}</td>
       <td>{hondaTopSpeed}</td>
-      <td>{honda.TopColour}</td>
+      <td>{hondaTopColour}</td>
     </tr>
   </table>,
   document.getElementById("root")
